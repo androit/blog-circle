@@ -3,33 +3,44 @@
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <title>Blog Circle</title>
-    <link title="Bootstrap" href="lib/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link title="Bootstrap" href="lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-      body{
-      margin: 40px;
-      
-      }
-      .theme{
-      background-color: orange;
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+       }
+      .subtitles{
+        font-size:150%;
       }
     </style>
-    <script src="lib/js/bootstrap.js" type="application/x-javascript"></script>
+    <script src="lib/js/bootstrap.min.js" type="application/x-javascript"></script>
     <script src="http://code.jquery.com/jquery.js" type="application/x-javascript"></script>
   </head>
   <body>
-    <div style="margin-top: 35px;" class="container">
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner"> <a class="brand" href="#">Title</a>
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container"> <a class="brand" style="padding-left:0px">Blog
+            Circle</a>
+          <form class="navbar-form pull-right"> <input class="span2" placeholder="Email"
+              type="text"> <input class="span2" placeholder="Password" type="password">
+            <input class="btn" value="Login" type="button"> </form>
         </div>
       </div>
-      <div class="row">
-        <div class="span1"> Hi </div>
-        <div class="span7"> World </div>
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <div id="left_column" class="pull-right">
+          <form>
+            <fieldset> <legend>Sign up now!</legend> <label>Email</label><input
+                name="email" placeholder="Email" type="text"> <label>Password</label><input
+                name="pw" placeholder="Password" type="text"></fieldset>
+          </form>
+        </div>
+        <div id="left_column">
+          <h2>Built by bloggers —<br>
+            &nbsp;&nbsp;&nbsp; Build for bloggers </h2>
+          <p>A tool. A network. Bloggers united.</p>
+          <input class="btn" value="Learn More" type="button"> </div>
       </div>
     </div>
   </body>
